@@ -13,14 +13,14 @@ public final class DefaultStoragePath extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if ("getDefaultStoragePath".equals(action)) {
-            this.handleGetDefaultStorageLocation();
+            this.handleGetDefaultStorageLocation(callbackContext);
             return true;
         }
         
         return false;
     }
     
-    private void handleGetDefaultStorageLocation() {
+    private void handleGetDefaultStorageLocation(CallbackContext callbackContext) {
         String path = this.getDefaultStoragePath();
         PluginResult result = new PluginResult(PluginResult.Status.OK, path);
         callbackContext.sendPluginResult(result);
