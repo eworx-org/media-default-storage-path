@@ -29,8 +29,6 @@
     
     </platform>
     
-    <!--
-    
     <platform name="ios">
     
         <config-file target="config.xml" parent="/*">
@@ -44,7 +42,5 @@
         <source-file src="src/ios/DefaultStoragePath.m" />
         
     </platform>
-    
-    -->
     
 </plugin>
