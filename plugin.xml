@@ -3,11 +3,11 @@
 
     <name>DefaultStoragePath</name>
     
-    <description>iOS AVAudioSession adapter</description>
+    <description>Default storage path utility</description>
     
     <license>Apache 2.0</license>
     
-    <keywords>cordova,ios,storage,path</keywords>
+    <keywords>cordova,android,ios,storage,path,default</keywords>
     
     <js-module src="www/defaultStoragePath.js" name="DefaultStoragePath">
         <clobbers target="window.DefaultStoragePath" />
