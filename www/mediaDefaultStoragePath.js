@@ -7,7 +7,7 @@ var MediaDefaultStoragePath = function() {
     }
 };
 
-DefaultStoragePath.prototype.getDefaultStoragePath = function(successCallback, errorCallback) {
+MediaDefaultStoragePath.prototype.getDefaultStoragePath = function(successCallback, errorCallback) {
     exec(successCallback, errorCallback, "MediaDefaultStoragePath", "getDefaultStoragePath", []);
 };
 
