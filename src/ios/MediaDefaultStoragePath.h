@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
 
-@interface DefaultStoragePath : CDVPlugin
+@interface MediaDefaultStoragePath : CDVPlugin
 
 - (void) getDefaultStoragePath:(CDVInvokedUrlCommand*)command;
 

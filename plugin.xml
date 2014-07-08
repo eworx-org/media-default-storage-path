@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gr.eworx.defaultStoragePath" version="0.0.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gr.eworx.mediaDefaultStoragePath" version="0.0.1">
 
-    <name>DefaultStoragePath</name>
+    <name>MediaDefaultStoragePath</name>
     
-    <description>Default storage path utility</description>
+    <description>Default storage path utility for Cordova Media plugin</description>
     
     <license>Apache 2.0</license>
     
-    <keywords>cordova,android,ios,storage,path,default</keywords>
+    <keywords>cordova,android,ios,media,storage,path,default</keywords>
     
-    <js-module src="www/defaultStoragePath.js" name="DefaultStoragePath">
-        <clobbers target="window.DefaultStoragePath" />
+    <js-module src="www/mediaDefaultStoragePath.js" name="MediaDefaultStoragePath">
+        <clobbers target="window.MediaDefaultStoragePath" />
     </js-module>
     
     <platform name="android">
     
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="DefaultStoragePath" >
-                <param name="android-package" value="gr.eworx.storage.DefaultStoragePath"/>
+            <feature name="MediaDefaultStoragePath" >
+                <param name="android-package" value="gr.eworx.storage.MediaDefaultStoragePath"/>
             </feature>
         </config-file>
         
@@ -25,21 +25,21 @@
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
         </config-file>
         
-        <source-file src="src/android/DefaultStoragePath.java" target-dir="src/gr/eworx/storage" />
+        <source-file src="src/android/MediaDefaultStoragePath.java" target-dir="src/gr/eworx/storage" />
     
     </platform>
     
     <platform name="ios">
     
         <config-file target="config.xml" parent="/*">
-            <feature name="DefaultStoragePath">
-                <param name="ios-package" value="DefaultStoragePath"/>
+            <feature name="MediaDefaultStoragePath">
+                <param name="ios-package" value="MediaDefaultStoragePath"/>
             </feature>
         </config-file>
     
-        <header-file src="src/ios/DefaultStoragePath.h" />
+        <header-file src="src/ios/MediaDefaultStoragePath.h" />
     
-        <source-file src="src/ios/DefaultStoragePath.m" />
+        <source-file src="src/ios/MediaDefaultStoragePath.m" />
         
     </platform>
     

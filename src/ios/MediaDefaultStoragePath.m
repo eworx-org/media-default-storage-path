@@ -1,6 +1,6 @@
-#import "DefaultStoragePath.h"
+#import "MediaDefaultStoragePath.h"
 
-@implementation DefaultStoragePath
+@implementation MediaDefaultStoragePath
 
 - (void) getDefaultStoragePath:(CDVInvokedUrlCommand*)command
 {

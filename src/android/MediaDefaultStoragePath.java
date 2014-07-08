@@ -8,7 +8,7 @@ import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public final class DefaultStoragePath extends CordovaPlugin {
+public final class MediaDefaultStoragePath extends CordovaPlugin {
     
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
