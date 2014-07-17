@@ -14,8 +14,10 @@ To find out the absolute path of the recording:
 
 ```javascript
 var util = new MediaDefaultStoragePath();
-var dir = util.getDefaultStoragePath();
-var filePath = dir + '/myFile.wav';
+util.getDefaultStoragePath(function(directoryPath) {
+    var filePath = directoryPath + '/myFile.wav';
+    // do something with filePath
+});
 ```
 
 This plugin currently supports **Android** and **iOS**
