@@ -12,7 +12,7 @@
     <keywords>cordova,android,ios,media,storage,path,default</keywords>
     
     <js-module src="www/mediaDefaultStoragePath.js" name="MediaDefaultStoragePath">
-        <clobbers target="window.MediaDefaultStoragePath" />
+        <clobbers target="window.gr.eworx.MediaDefaultStoragePath" />
     </js-module>
     
     <platform name="android">
