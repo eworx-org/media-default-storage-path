@@ -13,7 +13,7 @@ recorder.startRecord();
 To find out the absolute path of the recording:
 
 ```javascript
-var util = new MediaDefaultStoragePath();
+var util = new window.gr.eworx.MediaDefaultStoragePath();
 util.getDefaultStoragePath(function(directoryPath) {
     var filePath = directoryPath + '/myFile.wav';
     // do something with filePath
